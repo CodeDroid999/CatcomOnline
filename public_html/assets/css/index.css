@@ -66,6 +66,19 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
+.form-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Adjust as needed */
+  text-align:left;
+}
+.form-containere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 
 hr {
   box-sizing: content-box;
@@ -11680,7 +11693,7 @@ pre .code {
 .contact .contact-form-card,
 .contact .contact-info-card {
   padding: 35px;
-  background: #fff;
+  background:#e6e9ed;
   min-height: 500px;
 }
 
