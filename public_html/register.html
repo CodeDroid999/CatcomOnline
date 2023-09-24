@@ -75,14 +75,29 @@
                 vibrant community that is dedicated to helping you become the best version of yourself!</h4><br>
             <button class="btn bg-primary w-lg"><i class="ti-angle-double-down pr-2"></i>Join Us</button>
         </div>
-    </section>
-    <section class="registration p-5 justify-content-center"style="background-color: #e5e5f7;
-       background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 40px ), repeating-linear-gradient( #9fa3e555, #9fa3e5 );">
         <div class="container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe9rX7O0bNrwlSAG481jvOTD_Rr-w2MT8OvVbUxkAgoa2oNDw/viewform?embedded=true" width="850" height="1900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <form id="fs-frm" name="department-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <label for="department">Department</label>
+                  <select name="department" id="department" required="">
+                    <option value="" selected="" disabled="">Select</option>
+                    <option value="Front Desk">Front Desk</option>
+                    <option value="Customer Care">Customer Care</option>
+                    <option value="Shipping Receiving">Shipping / Receiving</option>
+                    <option value="Billing Accounting">Billing / Accounting</option>
+                  </select>
+                  <label for="message">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Send Message">
+              </form>
         </div>
     </section>
-    
     <footer class="footer py-3" style="background-color:#0E2954">
         <div class="container">
             <p class="small mb-0 text-light">
