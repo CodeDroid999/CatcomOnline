@@ -1,16 +1,3 @@
-/*!
-=========================================================
-* JohnDoe Landing page
-=========================================================
-
-* Copyright: 2019 Mwega (https://Mwega.com)
-* Licensed: (https://Mwega.com/licenses)
-* Coded by www.Mwega.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 // smooth scroll
 $(document).ready(function(){
