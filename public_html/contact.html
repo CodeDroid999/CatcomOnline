@@ -95,21 +95,30 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
-                        <form action="">
+                        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/myyqnvrn" method="post">
+                            <fieldset id="fs-frm-inputs">
+                                <div class="form-group">
+                              <label for="full-name">Full Name</label><br>
+                              <input type="text"class="form-control" name="name" id="full-name" placeholder="First and Last" required="">
+                              </div>
+                              <div class="form-group">
+                              <label for="email-address">Email Address</label>
+                              <input class="form-control" type="email" name="_replyto" id="email-address" placeholder="example@gmail.com" required="">
+                              </div>
+                              <div class="form-group">
+                              <label for="telephone">Phone Number</label><br>
+                              <input type="telephone" class="form-control" name="telephone" id="telephone" placeholder="(+254) 726 141 436">
+                              </div>
+                              <div class="form-group">
+                              <label for="complaint">Message</label><br>
+                              <textarea rows="6" class="form-control" name="complaint" id="complaint" placeholder="Write your message..." required=""></textarea>
+                              <input type="hidden" name="_subject" id="email-subject" value="New Contact us Form Submission">
+                              </div>
+                            </fieldset>
                             <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Name *" required>
+                                <button type="submit" class="form-control btn btn-primary">Send message</button>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id=" placeholder=" Message *" rows="7"
-                                    required></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
-                            </div>
-                        </form>
+                          </form>
                     </div>
                 </div>
                 <div class="col-lg-4">

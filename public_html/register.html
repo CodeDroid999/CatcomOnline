@@ -90,8 +90,9 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Registration Form</h4>
-                        <form id="fs-frm" name="department-contact-form" accept-charset="utf-8"
-                            action="https://formspree.io/f/xbjvzbdy" method="post">
+<p>Student Registration form. Not a student?
+<a href="./alumni-registration.html">Alumni Registration here</a>  </p>                
+      <form id="fs-frm" name="department-contact-form" accept-charset="utf-8"                         action="https://formspree.io/f/xbjvzbdy" method="post">
                             <div class="form-group">
                                 <label for="full-name">Full Name</label>
                                 <input class="form-control" type="text" placeholder="Name *" name="name" id="full-name"
@@ -106,7 +107,7 @@
                             <div class="form-group">
                                 <label for="telephone">Phone Number</label><br>
                                 <input class="form-control" type="telephone" name="phoneNumber" id="phoneNumber"
-                                    placeholder="(+254) 555-5555">
+                                    placeholder="(+254) 745 093 093">
                             </div>
                             <div class=" form-group">
                                 <label for="Year of Study">Year of Study</label><br>
@@ -116,13 +117,32 @@
                                     <option value="Second Year">Second Year</option>
                                     <option value="Third Year">Third Year</option>
                                     <option value="Fourth Year">Fourth Year</option>
+                                    <option value="Fifth Year">Fifth Year</option>
+                                    <option value="Alumni" data-url="./alumni-registration.html">Alumni</option>
+                                                                        <option value="Fourth Year">Other</option>
+
 
                                     <input type="hidden" name="_subject" id="email-subject"
                                         value="New Catcom Member Registration">
                             </div>
+                            <div class="form-group">
+                                <label for="SCC">Small Christian Community (SCC)</label><br>
+                                  <select class="form-control"  name="SCC" required="">
+                                    <option value="" selected="" disabled="">Choose one</option>
+                                      <option value="St. Paul SCC">St. Paul SCC</option>
+                                      <option value="St. Stephen SCC">St. Stephen SCC</option>
+                                      <option value="Mary Mother of God SCC">Mary Mother of God SCC</option>
+                                      <option value="St. Martin SCC">St. Martin SCC</option>
+                                      <option value="St. Veronica SCC">St. Veronica SCC</option>
+                                      <option value="St. Jude SCC">St. Jude SCC</option>
+                                      <option value="St. Charles Lwanga SCC">St. Charles Lwanga SCC</option>
+                                      <option value="St. Therese SCC">St. Therese SCC</option>
+                                      <option value="None: Not yet in one">None: Haven't joined one yet.<br> *We will asign you to one</option>
+                                  </select>
+                            </div>
                             
                             <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary">Send Message</button>
+                                <button type="submit" class="form-control btn btn-primary">Register</button>
                             </div>
                         </form>
                     </div>
@@ -155,6 +175,19 @@
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script>
+        // Add JavaScript to handle option selection and navigation
+        const departmentSelect = document.getElementById("Year of Study"); // Update the ID here
+      
+        departmentSelect.addEventListener("change", function () {
+          const selectedOption = departmentSelect.options[departmentSelect.selectedIndex];
+          const url = selectedOption.getAttribute("data-url");
+          if (url) {
+            window.location.href = url;
+          }
+        });
+      </script>
+            
 
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
