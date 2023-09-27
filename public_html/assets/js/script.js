@@ -37,3 +37,11 @@ twitterBtn.addEventListener("click", ()=>{
 });
 
 quoteBtn.addEventListener("click", randomQuote);
+
+// Function to show copy notification
+function showCopyNotification() {
+    copyNotification.style.display = "inline"; // Show the notification
+    setTimeout(() => {
+        copyNotification.style.display = "none"; // Hide the notification after a delay
+    }, 2000); // Adjust the delay (in milliseconds) as needed
+}

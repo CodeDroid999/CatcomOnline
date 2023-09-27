@@ -68,12 +68,15 @@
     </nav>
     <section class="section py-5" style="background-color:#0E2954">
         <div class="container text-center">
-            <h2 class="text-white mt-3">Become a member</h2>
+            <h2 class="text-white mt-3">Become an alumni</h2>
             <h3 style="color:#FFC107">Why join us</h3>
-            <h4 class="text-light mb-2 font-weight-normal">Looking for a community where you can grow, connect, and
-                cultivate your love for God, yourself and
-                others? Look no further! Our community is the perfect place for you.Join us today and become part of a
-                vibrant community that is dedicated to helping you become the best version of yourself!</h4><br>
+            <h4 class="text-light mb-2 font-weight-normal">Joining our alumni community at CATCOM is an opportunity to reconnect with your faith, your fellow
+                alumni, and the values that have shaped your journey. As an alumni member, you'll have the chance to
+                relive the cherished memories of your time with us and contribute to the growth of our vibrant
+                community. But it's not just about nostalgia; it's about staying connected, sharing experiences, and
+                supporting each other in your ongoing journeys. By registering as an alumni, you'll be part of a
+                dedicated and welcoming community that is committed to helping you continue to be the best version of
+                yourself. Join us today and be an integral part of the CATCOM legacy!</h4><br>
             <button class="btn bg-primary w-lg"><i class="ti-angle-double-down pr-2"></i>Join Us</button>
         </div>
 
@@ -90,9 +93,11 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Registration Form</h4>
-<p>Student Registration form. Not an alumni?
-<a href="./register.html">Student Registration here</a>  </p>                
-      <form id="fs-frm" name="department-contact-form" accept-charset="utf-8"                         action="https://formspree.io/f/xnqkgrej" method="post">
+                        <p>Student Registration form. Not an alumni?
+                            <a href="./register.html">Student Registration here</a>
+                        </p>
+                        <form id="fs-frm" name="department-contact-form" accept-charset="utf-8"
+                            action="https://formspree.io/f/xnqkgrej" method="post">
                             <div class="form-group">
                                 <label for="full-name">Full Name</label>
                                 <input class="form-control" type="text" placeholder="Name *" name="name" id="full-name"
@@ -133,19 +138,19 @@
                             </div>
                             <div class="form-group">
                                 <label for="SCC">Small Christian Community (SCC)</label><br>
-                                  <select class="form-control"  name="SCC" required="">
+                                <select class="form-control" name="SCC" required="">
                                     <option value="" selected="" disabled="">Choose one</option>
-                                      <option value="St. Paul SCC">St. Paul SCC</option>
-                                      <option value="St. Stephen SCC">St. Stephen SCC</option>
-                                      <option value="Mary Mother of God SCC">Mary Mother of God SCC</option>
-                                      <option value="St. Martin SCC">St. Martin SCC</option>
-                                      <option value="St. Veronica SCC">St. Veronica SCC</option>
-                                      <option value="St. Jude SCC">St. Jude SCC</option>
-                                      <option value="St. Charles Lwanga SCC">St. Charles Lwanga SCC</option>
-                                      <option value="St. Therese SCC">St. Therese SCC</option>
-                                  </select>
+                                    <option value="St. Paul SCC">St. Paul SCC</option>
+                                    <option value="St. Stephen SCC">St. Stephen SCC</option>
+                                    <option value="Mary Mother of God SCC">Mary Mother of God SCC</option>
+                                    <option value="St. Martin SCC">St. Martin SCC</option>
+                                    <option value="St. Veronica SCC">St. Veronica SCC</option>
+                                    <option value="St. Jude SCC">St. Jude SCC</option>
+                                    <option value="St. Charles Lwanga SCC">St. Charles Lwanga SCC</option>
+                                    <option value="St. Therese SCC">St. Therese SCC</option>
+                                </select>
                             </div>
-                            
+
                             <div class="form-group ">
                                 <button type="submit" class="form-control btn btn-primary">Register</button>
                             </div>
@@ -183,16 +188,16 @@
     <script>
         // Add JavaScript to handle option selection and navigation
         const departmentSelect = document.getElementById("Year of Study"); // Update the ID here
-      
+
         departmentSelect.addEventListener("change", function () {
-          const selectedOption = departmentSelect.options[departmentSelect.selectedIndex];
-          const url = selectedOption.getAttribute("data-url");
-          if (url) {
-            window.location.href = url;
-          }
+            const selectedOption = departmentSelect.options[departmentSelect.selectedIndex];
+            const url = selectedOption.getAttribute("data-url");
+            if (url) {
+                window.location.href = url;
+            }
         });
-      </script>
-            
+    </script>
+
 
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
