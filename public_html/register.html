@@ -81,18 +81,18 @@
 
 
     <div class="section contact" id="contact">
-        <div id="map" class="map"><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2359.6252805556496!2d37.0149340634567!3d-1.098807515607618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f463d30d01ad1%3A0x7a1fa86fe8c18f6!2sSt.%20Augustine%20Catholic%20Parish%20%26%20JKUAT%20Chaplaincy%20%2C%20Juja!5e0!3m2!1sen!2ske!4v1689863346112!5m2!1sen!2ske"
-                width="1244" height="700" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div id="map" class="map">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Registration Form</h4>
-<p>Student Registration form. Not a student?
-<a href="./alumni-registration.html">Alumni Registration here</a>  </p>                
-      <form id="fs-frm" name="department-contact-form" accept-charset="utf-8"                         action="https://formspree.io/f/xbjvzbdy" method="post">
+                        <p>Student Registration form. Not a student?
+                            <a href="./alumni-registration.html">Alumni Registration here</a>
+                        </p>
+                        <form id="fs-frm" name="department-contact-form" accept-charset="utf-8"
+                            action="https://formspree.io/f/xbjvzbdy" method="post">
                             <div class="form-group">
                                 <label for="full-name">Full Name</label>
                                 <input class="form-control" type="text" placeholder="Name *" name="name" id="full-name"
@@ -119,7 +119,7 @@
                                     <option value="Fourth Year">Fourth Year</option>
                                     <option value="Fifth Year">Fifth Year</option>
                                     <option value="Alumni" data-url="./alumni-registration.html">Alumni</option>
-                                                                        <option value="Fourth Year">Other</option>
+                                    <option value="Fourth Year">Other</option>
 
 
                                     <input type="hidden" name="_subject" id="email-subject"
@@ -127,20 +127,21 @@
                             </div>
                             <div class="form-group">
                                 <label for="SCC">Small Christian Community (SCC)</label><br>
-                                  <select class="form-control"  name="SCC" required="">
+                                <select class="form-control" name="SCC" required="">
                                     <option value="" selected="" disabled="">Choose one</option>
-                                      <option value="St. Paul SCC">St. Paul SCC</option>
-                                      <option value="St. Stephen SCC">St. Stephen SCC</option>
-                                      <option value="Mary Mother of God SCC">Mary Mother of God SCC</option>
-                                      <option value="St. Martin SCC">St. Martin SCC</option>
-                                      <option value="St. Veronica SCC">St. Veronica SCC</option>
-                                      <option value="St. Jude SCC">St. Jude SCC</option>
-                                      <option value="St. Charles Lwanga SCC">St. Charles Lwanga SCC</option>
-                                      <option value="St. Therese SCC">St. Therese SCC</option>
-                                      <option value="None: Not yet in one">None: Haven't joined one yet.<br> *We will asign you to one</option>
-                                  </select>
+                                    <option value="St. Paul SCC">St. Paul SCC</option>
+                                    <option value="St. Stephen SCC">St. Stephen SCC</option>
+                                    <option value="Mary Mother of God SCC">Mary Mother of God SCC</option>
+                                    <option value="St. Martin SCC">St. Martin SCC</option>
+                                    <option value="St. Veronica SCC">St. Veronica SCC</option>
+                                    <option value="St. Jude SCC">St. Jude SCC</option>
+                                    <option value="St. Charles Lwanga SCC">St. Charles Lwanga SCC</option>
+                                    <option value="St. Therese SCC">St. Therese SCC</option>
+                                    <option value="None: Not yet in one">None: Haven't joined one yet.<br> *We will
+                                        asign you to one</option>
+                                </select>
                             </div>
-                            
+
                             <div class="form-group ">
                                 <button type="submit" class="form-control btn btn-primary">Register</button>
                             </div>
@@ -178,16 +179,16 @@
     <script>
         // Add JavaScript to handle option selection and navigation
         const departmentSelect = document.getElementById("Year of Study"); // Update the ID here
-      
+
         departmentSelect.addEventListener("change", function () {
-          const selectedOption = departmentSelect.options[departmentSelect.selectedIndex];
-          const url = selectedOption.getAttribute("data-url");
-          if (url) {
-            window.location.href = url;
-          }
+            const selectedOption = departmentSelect.options[departmentSelect.selectedIndex];
+            const url = selectedOption.getAttribute("data-url");
+            if (url) {
+                window.location.href = url;
+            }
         });
-      </script>
-            
+    </script>
+
 
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
