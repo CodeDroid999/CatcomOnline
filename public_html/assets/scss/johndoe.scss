@@ -1,6 +1,6 @@
 /*!
 =========================================================
-* JohnDoe Landing page
+* JKUAT CATCOM Landing page
 =========================================================
 
 * Copyright: 2019 Mwega (https://Mwega.com)
@@ -12,7 +12,6 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-
 // Core
 @import "vendors/bootstrap-4.3.1/functions";
 
@@ -23,7 +22,6 @@
 
 @import "vendors/bootstrap-4.3.1/mixins";
 @import "abstracts/mixins";
-
 
 // Bootstrap 4.3.1
 @import "vendors/bootstrap-4.3.1/root";
@@ -61,8 +59,7 @@
 @import "vendors/bootstrap-4.3.1/utilities";
 @import "vendors/bootstrap-4.3.1/print";
 
-
-// custom 
+// custom
 @import "base/typography";
 
 @import "components/breadcrumb";
